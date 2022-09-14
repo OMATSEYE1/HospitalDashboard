@@ -1,0 +1,124 @@
+.uptop{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.uptop .welcome{
+    line-height: 25px;
+    width: 500px;
+}
+.uptop .welcome p{
+    color: #52585f;
+}
+.uptop .buttns{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+.uptop .buttns input{
+    height: 100%;
+    width: 230px;
+    outline: none;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.uptop .buttns >svg{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 50px;
+}
+.notification{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 12px;
+    padding: 15px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+.cards>div{
+    background-color: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    padding-bottom: 20px;
+
+}
+.cards p{
+    color: #52585f;
+}
+.cards>div .contain{
+    padding: 15px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+.cards>div a{
+    transform: translateX(400%);
+}
+.cards>div p{
+    font-weight: 400;
+}
+
+
+
+/*          MEDIA QUERIES     */
+
+@media screen and (max-width: 1200px){
+    .uptop .welcome{
+        width: 200px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        gap: 1.5rem;
+    }
+    
+}
+
+
+/*         MEDIA QUERIES 2    */
+@media screen and (max-width: 620px){
+    .uptop{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*         MEDIA QUERIES 3     */
+@media screen and (max-width: 500px){
+    .uptop{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        display: flex;   
+        flex-direction: column;
+        width: 9100;
+    }
+    .cards>div a{
+        transform: translateX(1000%);
+    }
+}
+/*         MEDIA QUERIES 4     */
+@media screen and (max-width: 450px){
+    .cards>div a{
+        transform: translateX(800%);
+    }
+}
+
+

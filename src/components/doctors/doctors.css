@@ -1,0 +1,22 @@
+.doctors{
+    background-color: var(--color-white);
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 20px;
+}
+.doctors .head{
+    display: flex;
+    justify-content: space-between;
+}
+.doctors .doctorslist .doctor{
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.doctors .doctorslist .doctor img{
+    height: 30px;
+    width: 30px;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+}

@@ -1,0 +1,30 @@
+.recent-patients{
+    margin: 1rem 0;
+}
+.recent-patients table{
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+.recent-patients h2{
+    color: #3d4247;
+}
+.recent-patients table tbody td{
+    height: 1rem;
+    color: #52585f;
+}
+.recent-patients table tbody tr img{
+    height: 30px;
+    width: 30px;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+}
+
+
+/*        Media Queries       */
+
+@media screen and (max-width: 700px){
+    .recent-patients{
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.balances{
+    margin-top: 1rem;
+}
+.balances h2{
+    color: #3d4247;
+}
+.balances .balance{
+    background-color: rgba(238, 204, 255, 0.9);
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 0.8rem;
+    padding: 20px;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+.balances .balance .image{
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
